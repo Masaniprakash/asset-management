@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    h1 Add Employee
+
+    // Form to add a new employee
+    form(method='post' action='/employees/add')
+        .form-group
+            label(for='name') Name:
+            input#name.form-control(type='text' name='name', required)
+        button.btn.btn-primary(type='submit') Add Employee
